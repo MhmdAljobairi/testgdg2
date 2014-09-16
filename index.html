@@ -1,110 +1,141 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
+{% include head.html %}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="author" content="Oleh Zasadnyy, GDG Lviv">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="keywords" content="{{ site.metaKeywords }}">
-    <link rel="canonical" href="{{ site.url }}">
-    <!-- Social: Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="{{ site.twitterAccount }}">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:image:src" content="{{ site.socialImageSrcTwitter | prepend: site.baseurl | prepend: site.url }}">
-    <!-- Social: Facebook / Open Graph -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
-    <meta property="og:site_name" content="{{ site.title }}" /> 
-    <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:image" content="{{ site.socialImageSrcFacebook | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:description" content="{{ site.description }}" /> 
-    
-    <title>{% if page.title %}{{ page.title }} &bull; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link rel="shortcut icon" href="{{ "/img/favicons/favicon.ico" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/img/favicons/apple-touch-icon-152x152.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ "/img/favicons/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ "/img/favicons/apple-touch-icon-120x120.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ "/img/favicons/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ "/img/favicons/apple-touch-icon-76x76.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ "/img/favicons/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ "/img/favicons/apple-touch-icon-60x60.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ "/img/favicons/apple-touch-icon-57x57.png" | prepend: site.baseurl }}">
-    <link rel="icon" type="image/png" href="{{ "/img/favicons/favicon-196x196.png" sizes="196x196" | prepend: site.baseurl }}">
-    <link rel="icon" type="image/png" href="{{ "/img/favicons/favicon-160x160.png" sizes="160x160" | prepend: site.baseurl }}">
-    <link rel="icon" type="image/png" href="{{ "/img/favicons/favicon-96x96.png" sizes="96x96" | prepend: site.baseurl }}">
-    <link rel="icon" type="image/png" href="{{ "/img/favicons/favicon-32x32.png" sizes="32x32" | prepend: site.baseurl }}">
-    <link rel="icon" type="image/png" href="{{ "/img/favicons/favicon-16x16.png" sizes="16x16" | prepend: site.baseurl }}">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-TileImage" content="{{ "/img/favicons/mstile-144x144.png" | prepend: site.baseurl }}">
-    <meta name="msapplication-config" content="{{ "/img/favicons/browserconfig.xml" | prepend: site.baseurl }}">
-    
-    <link href="{{ "/css/main.min.css" | prepend: site.baseurl }}" rel="stylesheet"> 
+<body>
+    <div id="preloader" class="preloader">
+        <div class="loader-gplus"></div>
+    </div>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-  </head>
+    <div id="st-container" class="st-container disable-scrolling">
+        <div class="st-pusher">
+            <div class="st-content">
 
-<!-- Begin Hero Section -->
-<section id="top-section-hero" class="top-section-hero top-section image-section" style="background-image: url('{{ site.baseurl }}/img/sections-background/{{ site.heroImage }}');">
-    <header id="top-header" class="top-header">
-    <div class="overlay white-solid"></div>
-    <svg id="menu-trigger" class="menu-trigger icon icon-menu visible-xs" viewBox="0 0 32 32" data-effect="st-effect">
-        <use xlink:href="{{ site.baseurl }}/img/sprites/sprites.svg#icon-menu"></use>
-    </svg>
-    <a href="{{ site.baseurl }}/" id="logo-header" class="logo-header">
-        <div class="logo logo-light"></div>
-    </a>
-    <nav class="st-menu st-effect" id="menu">
-        <div class="logo-navbar logo logo-dark visible-xs"></div>
-        <ul>
-            {% for navigationLink in site.navigationLinks %}
-            <li>
-                <a class="{% if navigationLink.permalink != null and page.permalink == navigationLink.permalink %}current{% endif %}"  href="{% if navigationLink.permalink != null %} {{ navigationLink.permalink | prepend: site.baseurl }} {% else %} {{ navigationLink.link }} {% endif %}" {% if navigationLink.link != null %}target="_blank"{% endif %}>{{ navigationLink.text}}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        <ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
-            {% for bottomNavigationLink in site.bottomNavigationLinks %}
-            <li>
-                <a href="{% if bottomNavigationLink.permalink != null %} {{ bottomNavigationLink.permalink | prepend: site.baseurl }} {% else %} {{ bottomNavigationLink.link }} {% endif %}" {% if bottomNavigationLink.link != null %}target="_blank"{% endif %}>{{ bottomNavigationLink.text }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        {% for rightNavigationButton in site.rightNavigationButtons %}
-        <a href="{% if rightNavigationButton.permalink != null %} {{ rightNavigationButton.permalink | prepend: site.baseurl }} {% else %} {{ rightNavigationButton.link }} {% endif %}" class="right-nav-button right-nav-button-hidden btn btn-primary waves-effect waves-button waves-light waves-float pull-right hidden-xs hidden-sm" {% if rightNavigationButton.link != null %}target="_blank"{% endif %}>
-            {{ rightNavigationButton.text }}
-        </a>
-        {% endfor %}
-    </nav>
-</header>
-    <div class="content-wrapper">
-    <div class="jumbotron">
-        <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
-            {% assign heroText = site.heroTitle | split:"<typeout>" %}
-            <h1>{{ heroText[0] }}<span id="typeout-text" class="hidden-xs"></span><span class="typeout-fallback">{{ site.typeoutFallback }}</span>{{ heroText[1] }}</h1>
-            <p>{{ site.eventDate }}</p>
-            {% for button in site.heroButtons %}
-            <a href="{% if button.permalink != null %} {{ button.permalink | prepend: site.baseurl }} {% else %} {{ button.link }} {% endif %}" class="btn btn-primary waves-effect waves-button waves-light waves-float" {% if button.link != null %}target="_blank"{% endif %}>{{ button.text }}</a>
-            {% endfor %}
+                {{ content }} 
+
+                {% include footer.html %}
+
+            </div>
         </div>
     </div>
-    <a href="#about" class="explore">
-        <svg class="icon icon-arrow-down" viewBox="0 0 32 32">
-            <use xlink:href="{{ site.baseurl }}/img/sprites/sprites.svg#icon-arrow-down"></use>
-        </svg>
-    </a>
-    </div>
-</section>
-<!-- End Hero Section -->
 
+    {% if page.modal != null %} 
+    	{% include speakers-modals.html %} 
+    {% endif %} 
 
+    {% if page.permalink == '/schedule/' %}
+        {% include sessions-modals.html %} 
+    {% endif %} 
+
+    {% include analytics.html %}
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="{{ "/js/jquery-2.1.1.min.js" | prepend: site.baseurl }}><\/script>')
+    </script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+    if (typeof($.fn.modal) === 'undefined') {
+        document.write('<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}><\/script>')
+    }
+    </script>
+    <script src="{{ "/js/default.js" | prepend: site.baseurl }}"></script>
+    {% if page.permalink == '/' or page.permalink == '/hackathon/' %}
+    <script>
+        if ($(window).width() > 767) {
+            document.write('<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"><\/script>')
+        } 
+    </script>
+    {% elsif page.permalink == '/logistics/' %}
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry"></script>
+    {% endif %} 
+    <script>
+        Waves.displayEffect();
+        {% if page.permalink == '/' %}
+            if ($(window).width() > 767) {
+                var googleMaps = 'index',
+                    eventPlace = new google.maps.LatLng({{ site.eventPlaceCoordinates | replace:' ','' }}),
+                    centerMap = new google.maps.LatLng({{ site.mapCenterCoordinates | replace:' ','' }}),
+                    mobileCenterMap = new google.maps.LatLng({{ site.mapMobileCenterCoordinates | replace:' ','' }}),
+                    icon = '{{ site.baseurl }}/img/other/map-marker.svg';
+            } else {
+               var staticGoogleMaps = true,
+                eventPlaceCoordinates = '{{ site.eventPlaceCoordinates | replace:' ','' }}',
+                centerMapCoordinates = '{{ site.mapCenterCoordinates | replace:' ','' }}',
+                mobileCenterMapCoordinates = '{{ site.mapMobileCenterCoordinates | replace:' ','' }}',
+                icon = '{{ site.baseurl | prepend: site.url }}/img/other/map-marker.png';
+            }
+            var twitterFeedUrl = '{{ site.twitterFeed }}';
+            $(document).ready(function () {
+                $(function () {
+                    if ($(window).width() > 767) {
+                        $("#typeout-text").typed({
+                            strings: [{{site.typeoutTextValues}}],
+                            typeSpeed: 150,
+                            backDelay: 900,
+                            loop: true
+                        });
+                    }
+                });
+                var rockstarSpeakers = [
+                    {% for speaker in site.data.speakers %}
+                        {% if speaker.rockstar %}
+                        {name: "{{ speaker.name }} {{ speaker.surname }}", company: "{{ speaker.company }}", image: "{{ site.baseurl | append: '/img/people/' | append: speaker.thumbnailUrl }}"}{% if forloop.index != forloop.length %},{% endif %}
+                        {% endif %}
+                    {% endfor %}
+                ];
+                rockstarSpeakers.sort(function() {return 0.5 - Math.random()});
+                if(rockstarSpeakers.length > 0) {
+                    var animationDelay = 1500,
+                        count = {{ site.rockstarSpeakersCount }},
+                        colWidth = 12/count;
+                    for(i=0; i<count; i++) {
+                        var clearfix = '<div class="clearfix visible-xs"></div>';
+                        if ((i)%2 != 0) {
+                            clearfix = ""
+                        }
+                        $('#rockstar-speaker-title').after('<div class="col-md-'+ colWidth +' col-xs-6 rockstar-speakers-item animated hiding" data-animation="fadeInUp" data-delay="' + animationDelay +'"><div class="rockstar-speaker"><div class="flow-img img-circle rockstar-speaker-img" style="background-image: url(' + rockstarSpeakers[i].image + ')"></div><div class="name">' + rockstarSpeakers[i].name + '</div><div class="sub">' + rockstarSpeakers[i].company + '</div></div></div>' + clearfix);
+                        animationDelay -= 500;
+                    }
+                }
+            });
+        {% elsif page.permalink == '/logistics/' %}
+            var googleMaps = 'logistics',
+                eventPlace = new google.maps.LatLng({{ site.eventPlaceCoordinates }}),
+                centerMap = new google.maps.LatLng({{ site.logisticsMapCenterCoordinates }}),
+                mobileCenterMap = new google.maps.LatLng({{ site.logisticsMapMobileCenterCoordinates }}),
+                icon = '{{ site.baseurl }}/img/other/map-marker.svg';
+        {% elsif page.permalink == '/hackathon/' %}
+            if ($(window).width() > 767) {
+                var googleMaps = 'hackathon',
+                    eventPlace = new google.maps.LatLng({{ site.hackathonPlaceCoordinates }}),
+                    centerMap = new google.maps.LatLng({{ site.hackathonMapCenterCoordinates }}),
+                    mobileCenterMap = new google.maps.LatLng({{ site.hackathonMapMobileCenterCoordinates }}),
+                    icon = '{{ site.baseurl }}/img/other/map-marker.svg';
+            } else {
+               var staticGoogleMaps = true,
+                eventPlaceCoordinates = '{{ site.hackathonPlaceCoordinates | replace:' ','' }}',
+                centerMapCoordinates = '{{ site.hackathonMapCenterCoordinates | replace:' ','' }}',
+                mobileCenterMapCoordinates = '{{ site.hackathonMapMobileCenterCoordinates | replace:' ','' }}',
+                icon = '{{ site.baseurl | prepend: site.url }}/img/other/map-marker.png';
+            }
+            
+        {% endif %} 
+    </script>
+    <script src="{{ "/js/scripts.min.js" | prepend: site.baseurl }}"></script>
+    {% if page.permalink == '/schedule/' %}
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var navHeight = $('#top-header').height();
+                var headerHeight = $('.track-header').first().height();
+                $('.stick-header').stick_in_parent({sticky_class: 'sticky', offset_top: navHeight});
+                $('.stick-label').stick_in_parent({offset_top: navHeight + headerHeight});
+            });
+        </script>
+    {% endif %}
+
+    {% include schema-event.html %}
+</body>
 
 </html>
