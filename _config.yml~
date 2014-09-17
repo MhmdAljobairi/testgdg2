@@ -128,40 +128,40 @@ ticketsTitle: "Pricetable"
 ticketsInfo: "Tickets grant access to all conference sections, coffee brakes, lunch and party. Accommodation is NOT included in the ticket price."
 ticketsOffers:
  -
-  name: "Early Bird"
-  price: "350"
-  priceCurrency: "UAH"
+  name: "Normal Tickets"
+  price: "00"
+  priceCurrency: "JOD"
   ticketsNumber: "150"
   ribbon: "-5%"
-  buyButtonLink: "http://dfua.ticketforevent.com/"
-  buyButtonText: "Buy Now"
-  ticketContentList: ["Lorem ipsum is simply", "Dummy text of the printing", "Typesetting industry"]
-  validFrom: "2014-08-25T10:00"
-  validThrough: "2014-09-30T23:59"
+  buyButtonLink: "https://docs.google.com/forms/d/1wAQMPLzcje7TkPuZdRC73DdUpAOIqiu0PpZ7Bo7lUYI/viewform"
+  buyButtonText: "Take it Now"
+  ticketContentList: ["Students", "Developers", "Employees"]
+  validFrom: "2014-09-01T10:00"
+  validThrough: "2014-09-27T23:59"
  -
   name: "Last Chance"
-  price: "450"
-  priceCurrency: "UAH"
+  price: "00"
+  priceCurrency: "JOD"
   ticketsNumber: "100"
-  ribbon: "-20%"
+  ribbon: "100%"
   featured: true
-  buyButtonLink: "http://dfua.ticketforevent.com/"
-  buyButtonText: "Buy Now"
-  ticketContentList: ["Lorem ipsum is simply", "Dummy text of the printing", "Typesetting industry"]
-  validFrom: "2014-10-01T00:00"
-  validThrough: "2014-10-23T23:59"
+  buyButtonLink: "https://docs.google.com/forms/d/1wAQMPLzcje7TkPuZdRC73DdUpAOIqiu0PpZ7Bo7lUYI/viewform"
+  buyButtonText: "Take it Now"
+  ticketContentList: ["For last chance", "in last weeks", "wait us"]
+  validFrom: "2014-09-20T00:00"
+  validThrough: "2014-09-27T23:59"
   disabled: true
  -
-  name: "Student"
-  price: "200"
-  priceCurrency: "UAH"
+  name: "Press"
+  price: "00"
+  priceCurrency: "JOD"
   ticketsNumber: "50"
-  buyButtonLink: "http://dfua.ticketforevent.com/"
-  buyButtonText: "Buy Now"
-  additionalInfo: "Requires a valid student ID at the conference check in. Without student ID at the check in, ticket will be cancelled without refund"
-  ticketContentList: ["Lorem ipsum is simply", "Dummy text of the printing", "Typesetting industry"]
-  validFrom: "2014-08-20T10:00"
-  validThrough: "2014-10-23T23:59"
+  buyButtonLink: "https://docs.google.com/forms/d/1wAQMPLzcje7TkPuZdRC73DdUpAOIqiu0PpZ7Bo7lUYI/viewform"
+  buyButtonText: "Take it Now"
+  additionalInfo: "Only for press stuffs, to make a reports for GDG DevFest 2014"
+  ticketContentList: ["TV", "Newspapers", "Radio"]
+  validFrom: "2014-09-01T10:00"
+  validThrough: "2014-09-26T23:59"
 
 # Footer
 socialLinks:
@@ -173,7 +173,7 @@ footerBlocks:
  -
   title: "Links"
   links:
-   - {link: "http://gdg.org.ua", text: "GDG.org.ua"}
+   - {link: "http://gdg.org.ua", text: "GDG Yarmouk"}
    - {link: "https://developers.google.com", text: "Google Developers"}
  -
   title: "Contacts"
@@ -204,12 +204,12 @@ findWayWalking: "WALKING"
 findWayBicycling: "BICYCLING"
 findWayTransit: "TRANSIT"
 findWayFindFlight: "Find Flight"
-logisticsMapCenterCoordinates: "49.056728, 3.117289"
-logisticsMapMobileCenterCoordinates: "48.335365, 23.711648"
+logisticsMapCenterCoordinates: "31.963299, 35.844601"
+logisticsMapMobileCenterCoordinates: "31.963299, 35.844601"
 
 # Logistics Direction Details Block
 directionDetailsImage: "direction-details.jpg"
-directionDetailsTitle: "Get around Lviv"
+directionDetailsTitle: "Get around Yarmouk"
 directionDetailsCards:
  - {title: "From the Airport", information: 'Airport is right at the city border. It is easily reachable by car, public transport or taxi. More information is available at <a href="http://lwo.aero/en/transport">airport website</a>.'}
  - {title: "Public Transit", information: 'Google Transit is available in Lviv. So you can find your way in Google Maps. Moreover, you can download any of the offline public transit apps available for Lviv.'}
