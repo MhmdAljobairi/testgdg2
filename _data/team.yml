@@ -53,13 +53,13 @@
   name: "Valentyn"
   surname: "Shybanov"
   title: "Web and Cloud Program Committee"
-  thumbnailUrl: ValentynShybanov.jpg
+  thumbnailUrl: MhmdAljobairi.jpg
   subTeam: true
   social: 
     - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
     - {name: "site", link: "http://olostan.name/"}
 - 
-id: 7
+id: 8
   name: "Mohammad"
   surname: "Aljobairi"
   title: "GDG Manager"
