@@ -8,7 +8,7 @@
   thumbnailUrl: MhmdAljobairi.jpg
   rockstar: true
   ribbon: 
-    - {abbr: "PcNetSoft", title: "PcNetSoft, url: "https://developers.google.com/experts/"}
+    - {abbr: "GDE", title: "Google Developer Expert", url: "https://developers.google.com/experts/"}
     - {abbr: "GDG", title: "Google Developer Group", url: "https://developers.google.com/groups/chapter/107562802227561437057/"}
   social: 
     - {name: "google-plus", link: "https://plus.google.com/+MateuszHerych"}
@@ -32,11 +32,12 @@
   surname: "Alhuwwari"
   company: "YAAP"
   title: "UX/Product Manager & Consultant"
-  bio: "Ahmad is a UX Consultant/Manager. That is a fancy way of saying he plans how to present the things you see on your computer screen, so that they are easy  to understand, engaging and compelling. Things like the navigation, forms, categories and words on intranets, websites, web applications and business systems. He has been doing this professionally since 2006; also, he is a regular speaker at UX events."
+  bio: "Mateusz is an Android GDE and GDG organizer. Works as Android Developer for Base CRM where he uses his android-abracadabras to make enterprise software users more productive."
   thumbnailUrl: AhmadMAlhuwwari.jpg
   rockstar: true
   ribbon: 
-    - {abbr: "YAAP", title: "YAAP", url: "https://developers.google.com/experts/"}
+    - {abbr: "GDE", title: "Google Developer Expert", url: "https://developers.google.com/experts/"}
+    - {abbr: "GDG", title: "Google Developer Group", url: "https://developers.google.com/groups/chapter/107562802227561437057/"}
   social: 
     - {name: "google-plus", link: "https://plus.google.com/+MateuszHerych"}
     - {name: "twitter", link: "https://twitter.com/mherych"}
@@ -64,7 +65,7 @@
   thumbnailUrl: KhaledSultan.jpg
   rockstar: true
   ribbon:
-    - {abbr: "Genie9", title: "Genie9", url: "https://developers.google.com/groups/chapter/110301321530950732281/"}
+    - {abbr: "GDG", title: "Google Developer Group", url: "https://developers.google.com/groups/chapter/110301321530950732281/"}
   social: 
     - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
     - {name: "site", link: "http://olostan.name/"}
