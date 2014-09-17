@@ -58,3 +58,12 @@
   social: 
     - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
     - {name: "site", link: "http://olostan.name/"}
+      id: 7
+  name: "Mohammad"
+  surname: "Aljobairi"
+  title: "GDG Manager"
+  thumbnailUrl: MhmdAljobairi.jpg
+  subTeam: true
+  social: 
+    - {name: "google-plus", link: "https://google.com/+MohammadAljobairi"}
+    - {name: "site", link: "http://olostan.name/"}
