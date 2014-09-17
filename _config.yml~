@@ -56,7 +56,7 @@ typeoutTextValues: '"", "Season", "Yarmouk", "Jordan", "With Zain"'
 typeoutFallback: "Season"
 heroButtons:
  - {link: "http://bit.ly/dfua-c4p", text: "Become a speaker"}
- - {permalink: "/#tickets", text: "Buy tickets"}
+ - {permalink: "/#tickets", text: "find tickets"}
 
 # About Block
 aboutTitle: "About GDG DevFest"
@@ -84,16 +84,16 @@ rockstarSpeakersButtonText: "See all speakers"
 
 # Location Block
 locationBlockTitle: "Location"
-eventLocationName: "Conference Hall"
+eventLocationName: "Zain Jordan HQ"
 eventLocationLink: "http://cabinet.kinopalace.lviv.ua/showtimes/"
-eventStreetAddress: "22 Teatral'na St"
-eventAddressLocality: "Lviv"
+eventStreetAddress: "Jordan, Amman , 8th Circle"
+eventAddressLocality: "Zain"
 eventAddressLocalityRegion: "Lvivska"
 eventPostalCode: "79000"
 eventAddressCountry: "Ukraine"
-eventStartTime: "2014-10-25T10:00"
-eventDoorTime: "09:00"
-eventEndTime: "2014-10-25T20:00"
+eventStartTime: "2014-09-27T09:00"
+eventDoorTime: "08:00"
+eventEndTime: "2014-29-27T19:00"
 eventPlaceCoordinates: "49.843237, 24.028751"
 mapCenterCoordinates: "49.842537, 24.025701"
 mapMobileCenterCoordinates: "49.841620, 24.029411"
