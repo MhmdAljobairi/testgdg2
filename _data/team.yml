@@ -26,11 +26,22 @@
     - {name: "github", link: "https://github.com/ozasadnyy"}
 - 
   id: 2
-  name: "Ostap"
-  surname: "Andrusiv"
-  title: "Sponsors and Speakers Manager"
-  thumbnailUrl: OstapAndrusiv.jpg
+  name: "Mohammad"
+  surname: "Al jobairi"
+  title: "Android Program Committee"
+  thumbnailUrl: MhmdAljobairi.jpg
   team: true
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+DmytroDanylyk"}
+    - {name: "twitter", link: "https://twitter.com/dmytrodanylyk"}
+    - {name: "github", link: "https://github.com/dmytrodanylyk"}
+- 
+  id: 3
+  name: "Osama"
+  surname: "Alwaqfi"
+  title: "Google Club at Yarmouk University"
+  thumbnailUrl: OsamaAlwaqfi.jpg
+  subTeam: true
   ribbon: 
     - {abbr: "GDG", title: "Google Developer Group"}
   social: 
@@ -38,14 +49,4 @@
     - {name: "twitter", link: "https://twitter.com/p1f"}
     - {name: "site", link: "http://andrusiv.com/"}
 - 
-  id: 4
-  name: "Mohammad"
-  surname: "Al jobairi"
-  title: "Android Program Committee"
-  thumbnailUrl: MhmdAljobairi.jpg
-  subTeam: true
-  social: 
-    - {name: "google-plus", link: "https://plus.google.com/+DmytroDanylyk"}
-    - {name: "twitter", link: "https://twitter.com/dmytrodanylyk"}
-    - {name: "github", link: "https://github.com/dmytrodanylyk"}
-- 
+
