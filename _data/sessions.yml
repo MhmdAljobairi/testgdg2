@@ -13,8 +13,8 @@
   title: "keynote"
   description: "This session will reveal the invisible structures behind the material design system. Designers will show how to use the new color systems, typographic strategies, and the underlying grids that hold it together. They will show how imagery and the new framework material rendering can make apps more interesting and communicate more quickly."
   subtype: presentation
-  speakers: [3,4]
-  language: en
+  speakers: [3,4,5,7]
+  language: en , ar
   complexity: "Basic"
 -
   id: 002
