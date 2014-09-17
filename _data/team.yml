@@ -39,8 +39,8 @@
     - {name: "site", link: "http://andrusiv.com/"}
 - 
   id: 4
-  name: "Dmytro"
-  surname: "Danylyk"
+  name: "Mohammad"
+  surname: "Aljobairi"
   title: "Android Program Committee"
   thumbnailUrl: DmytroDanylyk.jpg
   subTeam: true
@@ -48,14 +48,4 @@
     - {name: "google-plus", link: "https://plus.google.com/+DmytroDanylyk"}
     - {name: "twitter", link: "https://twitter.com/dmytrodanylyk"}
     - {name: "github", link: "https://github.com/dmytrodanylyk"}
-- 
-id: 8
-  name: "Mohammad"
-  surname: "Aljobairi"
-  title: "GDG Manager"
-  thumbnailUrl: MhmdAljobairi.jpg
-  team: true
-  social: 
-    - {name: "google-plus", link: "https://google.com/+MohammadAljobairi"}
-    - {name: "site", link: "http://olostan.name/"}
 - 
