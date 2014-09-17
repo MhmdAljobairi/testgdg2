@@ -64,7 +64,8 @@ id: 8
   surname: "Aljobairi"
   title: "GDG Manager"
   thumbnailUrl: MhmdAljobairi.jpg
-  subTeam: true
+  team: true
   social: 
     - {name: "google-plus", link: "https://google.com/+MohammadAljobairi"}
     - {name: "site", link: "http://olostan.name/"}
+- 
