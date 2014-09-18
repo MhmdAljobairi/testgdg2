@@ -76,3 +76,23 @@
   social: 
     - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
     - {name: "site", link: "http://olostan.name/"}
+- 
+  id: 9
+  name: "Osama"
+  surname: "Albasha"
+  company: "freelancer"
+  title: "Android developer"
+  bio: "Osama, Android developer, worked at Atlas Electronic Dictionary and now android freelancer. Will talk about making money with admob, ads types and how to implement them in android.As a summary: how to get paid for free by working less on android apps"
+  thumbnailUrl: OsamaBash.jpg
+  rockstar: false
+  social: 
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+
+
+
+
+
+
+
+
