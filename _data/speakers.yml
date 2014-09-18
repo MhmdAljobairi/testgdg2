@@ -56,9 +56,21 @@
   surname: "Sultan"
   company: "Genie9"
   title: "Android Developer"
-  bio: "Valentyn focuses on Polymer and Web Components. In previous roles he’s helped craft design systems for massive enterprise companies, user interfaces for console titles, and even built the occasional enchanted princess game. These days his mission is to fight for a better web and to help developers build great experiences."
+  bio: "Khaled, Android enthusiast, proud PSUT alumnus, avid runner, constant traveler, and a Jordanian who actually cares about the environment. I worked at several startups in Amman where I developed some awesome apps for Android. I'm now an Android engineer at Genie9."
   thumbnailUrl: KhaledSultan.jpg
   rockstar: true
+  social: 
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+    - 
+  id: 8
+  name: "Raed"
+  surname: "Marji"
+  company: "JoGeeks"
+  title: "Product Manager"
+  bio: "Raed is a product manager at JoGeeks, loves to work and help startups. He is a Geek and a traveler. He is also the co-founder of Google Developers Group in Amman."
+  thumbnailUrl: RaedMarji.jpg
+  rockstar: false
   social: 
     - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
     - {name: "site", link: "http://olostan.name/"}
