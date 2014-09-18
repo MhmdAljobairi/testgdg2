@@ -78,7 +78,7 @@
     - {name: "site", link: "http://olostan.name/"}
 - 
   id: 9
-  name: "Osama"
+  name: "Osama1"
   surname: "Albasha"
   company: "freelancer"
   title: "Android developer"
@@ -88,18 +88,10 @@
   social: 
     - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
     - {name: "site", link: "http://olostan.name/"}
-- 
-  id: 10
-  name: "Sultan"
-  surname: "Shalakhti"
-  company: "Yahoo"
-  title: "Senior Visual Designer"
-  bio: "Osama, Android developer, worked at Atlas Electronic Dictionary and now android freelancer. Will talk about making money with admob, ads types and how to implement them in android.As a summary: how to get paid for free by working less on android apps"
-  thumbnailUrl: OsamaBash.jpg
-  rockstar: true
-  social: 
-    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
-    - {name: "site", link: "http://olostan.name/"}
+
+
+
+
 
 
 
